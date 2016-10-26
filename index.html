@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <title>MyProject</title>
+</head>
+<body>
+<div id="app">
+    <section class="list">
+        <header class="header">
+            <div class="arrow-container">
+                <span class="arrow"><span class="arrow green"></span></span>
+            </div>
+            <div class="login">登录</div>
+            <h1>我自己的图片网</h1>
+        </header>
+        <div class="search">
+            <input type="text" placeholder="搜索你想要的图片">
+            <span>搜一搜</span>
+        </div>
+        <ul class="nav clearfix">
+            <li data-id="0">摄影</li>
+            <li data-id="1">明星</li>
+            <li data-id="2">壁纸</li>
+            <li data-id="3">宠物</li>
+            <li data-id="4">动漫</li>
+            <li data-id="5">风景</li>
+            <li data-id="6">头像</li>
+            <li data-id="7">人物</li>
+        </ul>
+        <!-- 列表页模板容器元素 -->
+        <div class="image-container">
+            <div class="left-container"></div>
+            <div class="right-container"></div>
+        </div>
+        <div class="go-back">返回顶部</div>
+    </section>
+    <section class="layer"></section>
+</div>
+<!-- 定义大图页的模板 -->
+<script type="text/template" id="tpl_layer">
+    <div class="layer-container" style="<%=style%>"><img src="<%=url%>" alt=""></div>
+    <header class="header hide">
+        <div class="arrow-container">
+            <span class="arrow arrow-btn"><span class="arrow black"></span></span>
+        </div>
+        <h1><%=title%></h1>
+    </header>
+</script>
+<script type="text/javascript" src="static/sea.js"></script>
+<script type="text/javascript" src="static/lib/seajs-css.js"></script>
+<script type="text/javascript" src="static/lib/zepto.js"></script>
+<script type="text/javascript" src="static/lib/zepto.touch.js"></script>
+<script type="text/javascript" src="static/lib/underscore.js"></script>
+<script type="text/javascript" src="static/lib/backbone.js"></script>
+<script type="text/javascript">
+    seajs.use("app",function (app) {
+        app();
+    })
+</script>
+</body>
+</html>

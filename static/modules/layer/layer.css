@@ -1,0 +1,36 @@
+.layer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+}
+.layer .layer-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	text-align: center;
+}
+.layer .layer-container img {
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+.layer .header {
+	background: #000;
+}
+.layer .header.hide {
+	display: none;
+}
+.header .arrow.black{
+	border-right: 20px solid #000;
+	position: absolute;
+	left: -14px;
+    top: -20px;
+}
+.layer .header h1 {
+	font-size: 20px;
+}

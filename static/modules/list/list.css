@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.header {
+	height: 60px;
+	background: green;
+	color: #fff;
+	line-height: 60px;
+}
+.header h1 {
+	font-size: 30px;
+	text-align: center;
+	text-indent: 30px;
+}
+.header .arrow-container {
+	float: left;
+	position: relative;
+}
+.header .login {
+	float: right;
+	margin-right: 10px;
+}
+.header .arrow {
+	border-left: 20px solid transparent;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-right: 20px solid #fff;
+	position: absolute;
+	font-size: 0;
+	top: 10px;
+    left: -5px;
+}
+.header .arrow.green{
+	border-right: 20px solid green;
+	position: absolute;
+	left: -14px;
+    top: -20px;
+}
+.search {
+	display: -webkit-box;
+	padding: 10px;
+}
+.search input {
+	-webkit-box-flex: 1;
+	display: block;
+	height: 40px;
+	box-sizing: border-box;
+	border: 1px solid green;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.search span {
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	background: green;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+}
+.nav li {
+	list-style: none;
+	float: left;
+	height: 40px;
+	width: 12.5%;
+	text-align: center;
+	line-height: 40px;
+}
+
+.image-container {
+	display: -webkit-box;
+	width: 100%;
+}
+.left-container,
+.right-container {
+	-webkit-box-flex: 1;
+	font-size: 0;
+}
+.left-container {
+	padding: 6px 3px 6px 6px;
+}
+.right-container {
+	padding: 6px 6px 6px 3px;
+}
+.image-container img {
+	width: 100%;
+	margin-bottom: 6px;
+	display: block;
+}
+/*返回顶部按钮样式*/
+.go-back {
+	position: fixed;
+	bottom: 50px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	padding: 6px;
+	display: none;;
+}
